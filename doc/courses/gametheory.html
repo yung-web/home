@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Theory</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+  <!-- Google fonts -->
+  <link href="./css/css" rel="stylesheet" type="text/css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.996.0" data-gr-ext-installed="">
+  <div id="header">
+  <div style="background-color:#8C1515; color:#FFF; padding:15px;">
+    <h1>Game Theory </h1>
+  </div>
+  </div>
+  <div class="container sec">
+    <h2>Introduction</h2>
+<h4>A graduate-level course on game theory, but this course was developed mainly for the students who wanted to apply game theory to other areas, e.g., networking and communication.
+Thus, the depth of course contents was relatively easy without no serious mathematical proofs, but with focus on intuitions and applications.
+   Lectured by Prof. Yung Yi, KAIST, South Korea (spring12, spring17, spring19). </h4>
+ <br>
+</div>
+
+  <div class="container sec">
+    <h2>Acknowledgment </h2>
+<h4> There was no formal textbook for this course.
+The contents of the lecture slides are largely borrowed from the following excellent resources, and Prof. Yung Yi mainly
+reorganized them for convenience of this class. I appreciate their efforts.
+
+<br> <br>
+<li> <a href="http://www.cse.cuhk.edu.hk/~cslui/sigmetrics2006.html">Tutorial at ACM Sigmetrics 2006 </a> by John C. S. Lui (CUHK) </li>
+<li> The book  <a href="https://www.cambridge.org/gb/academic/subjects/engineering/communications-and-signal-processing/game-theory-wireless-and-communication-networks-theory-models-and-applications?format=HB&isbn=9780521196963">``Game Theory in Wireless and Communication Networks"</a> and the lecture slides by Zhu Han (Univ. of Houston)</li>
+<li> <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-254-game-theory-with-engineering-applications-spring-2010/"> lecture nodes</a> by Asu Ozdaglar (MIT)</li>
+<li> <a href="https://web.ece.ucsb.edu/~jrmarden/ece149.html">lecture notes</a>  by Jason R. Marden </li>
+<li> <a href="http://web.stanford.edu/~rjohari/teaching/past.html">lecture notes on Stackelberg game </a> by Ramesh Johari (Stanford) </li>
+<li> The book <a href="https://www.sciencedirect.com/book/9780123846983/game-theory-and-learning-for-wireless-networks"> ``Game Theory and Learning for Wireless Networks'' </a> by Samson Lasaulce and Hamidou Tembine  </li>
+
+  </h4>
+  </div>
+<br>
+
+
+<!-- <div class="container sec">
+    <h2>Lecture slide latex files</h2>
+<h4><a href="prob_files/Probability_course.zip"> Download here</a>. They have been made by Prof. Yung YI, using LaTex Beamer package in the overleaf editing platform.
+They will keep being updated (most recent update: 21feb). Feel free to download, modify, and use them.
+Some figures, examples, and texts are borrowed from the lecture slides of the <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"> MIT probability course</a>.
+</h4>
+  </div> -->
+
+
+  <div class="container sec">
+    <table class="table">
+      <tbody>
+        <tr class="active">
+          <th>Contents &nbsp;</th>
+          <th>Videos&nbsp;</th>
+          <th>Materials &nbsp;</th>
+          <th></th>
+        </tr>
+
+        <tr>
+          <td>1. Introduction to Game Theory
+          </td>
+          <td>
+           <li>Intro to game theory and what this course is about.  </li>
+           <li> <a href="https://youtu.be/O8chsEiK-HQ">Youtube</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/01.intro.pptx">pptx</a>, <a href="game_files/01.intro.pdf">pdf(1/1)</a>, <a href="game_files/01.intro-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/01.intro-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>2. Normal-form Game: Pure Strategy
+          </td>
+          <td>
+           <li> Two-player zero-sum game </li>
+           <li> Strict dominance, saddle point, min-max algorithm  </li>
+           <li> Non-zero-sum game </li>
+           <li> Nash equilibrium </li>
+           <li> <a href="https://youtu.be/wL09Dk7J8gg">Youtube: Part 1</a>, <a href="https://youtu.be/yYpjbfDIwKo">Youtube: Part 2</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/02.nf-pure.pptx">pptx</a>, <a href="game_files/02.nf-pure.pdf">pdf(1/1)</a>, <a href="game_files/02.nf-pure-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/02.nf-pure-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>3. Normal-form Game: Mixed Strategy
+          </td>
+          <td>
+           <li> Mixed strategy </li>
+           <li> Mixed Nash Equilibrium  </li>
+           <li> Best response and NE</li>
+           <li> <a href="https://youtu.be/a_xC8Vqu2FM">Youtube</a></li>
+
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/03.nf-mixed.pptx">pptx</a>, <a href="game_files/03.nf-mixed.pdf">pdf(1/1)</a>, <a href="game_files/03.nf-mixed-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/03.nf-mixed-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>4. Continous Strategy and Equilibrium Selection
+          </td>
+          <td>
+           <li> Continuous game </li>
+           <li> NE selection </li>
+           <li> Pareto-optimality </li>
+           <li> Price-of-anarchy and price-of-stability </li>
+           <li> <a href="https://youtu.be/o3EDv-qfetg">Youtube</a></li>
+
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/04.nf-eff-cont.pptx">pptx</a>, <a href="game_files/04.nf-eff-cont.pdf">pdf(1/1)</a>, <a href="game_files/04.nf-eff-cont-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/04.nf-eff-cont-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>5. Potential Game
+          </td>
+          <td>
+           <li> Potential game </li>
+           <li> Congestion game </li>
+           <li> <a href="https://youtu.be/Iw9VUdh8SI8">Youtube</a></li>
+
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/05.Potential.pptx">pptx</a>, <a href="game_files/05.Potential.pdf">pdf(1/1)</a>, <a href="game_files/05.Potential-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/05.Potential-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>6. Playing with Equilibrium
+          </td>
+          <td>
+           <li> NE existence and uniqueness</li>
+           <li> Finite and infinite games </li>
+           <li> <a href="https://youtu.be/vumnIW4ORZI">Youtube</a></li>
+
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/06.playingwitheq.pptx">pptx</a>, <a href="game_files/06.playingwitheq.pdf">pdf(1/1)</a>, <a href="game_files/06.playingwitheq-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/06.playingwitheq-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>7. Extensive-form Game, Sequential Game
+          </td>
+          <td>
+           <li> Sequential selection of strategies </li>
+           <li> Game tree </li>
+           <li> Subgame perfect NE </li>
+           <li> Backward induction </li>
+           <li> <a href="https://youtu.be/ufBCbcQATHA">Youtube: Part 1</a>, <a href="https://youtu.be/g-CS3WGmwpk">Youtube: Part 2</a></li>
+
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/07.ef.pptx">pptx</a>, <a href="game_files/07.ef.pdf">pdf(1/1)</a>, <a href="game_files/07.ef-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/07.ef-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>8. Stackelberg Game
+          </td>
+          <td>
+            <li> First-mover advantage</li>
+           <li> <a href="https://youtu.be/XiuBSCaPV3c">Youtube</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/08.Stackelberg.pptx">pptx</a>, <a href="game_files/08.Stackelberg.pdf">pdf(1/1)</a>, <a href="game_files/08.Stackelberg-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/08.Stackelberg-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>9. Repeated Game
+          </td>
+          <td>
+           <li> Repeated play of a matrix game </li>
+           <li> Future rewards/future punishments </li>
+           <li> Finite/infinite repeated games </li>
+           <li> Tit-For-Tat, Grim Trigger strategies </li>
+           <li> One deviation property </li>
+           <li> <a href="https://youtu.be/snPVlzYxvQo">Youtube: Part 1</a>, <a href="https://youtu.be/h5kwE5NFZgM">Youtube: Part 2</a>, <a href="https://youtu.be/_ZSN8647j88">Youtube: Part 3</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/09.repeated.pptx">pptx</a>, <a href="game_files/09.repeated.pdf">pdf(1/1)</a>, <a href="game_files/09.repeated-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/09.repeated-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>10. Bayesian Game
+          </td>
+          <td>
+           <li> Incomplete information game </li>
+           <li> Bayeisan equilibrium  </li>
+           <li> <a href="https://youtu.be/ATcK54AAjxU">Youtube: Part 1</a>, <a href="https://youtu.be/Xxqxvn5tXWQ">Youtube: Part 2</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/10.Bayesian.pptx">pptx</a>, <a href="game_files/10.Bayesian.pdf">pdf(1/1)</a>, <a href="game_files/10.Bayesian-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/10.Bayesian-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>11. Population Game
+          </td>
+          <td>
+           <li> Atomic/non-atomic congestion game </li>
+           <li> Invasion and mutation</li>
+           <li> Evolutionary game</li>
+           <li> NE and ESS (Evolutionary Stable Strategy)</li>
+           <li> <a href="https://youtu.be/gXGgKiS8fkM">Youtube: Part 1</a>, <a href="https://youtu.be/HHtnmsit9bM">Youtube: Part 2</a>, Youtube: Part 3</li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/11.PE.pptx">pptx</a>, <a href="game_files/11.PE.pdf">pdf(1/1)</a>, <a href="game_files/11.PE-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/11.PE-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>12. Nash Bargaining Solution
+          </td>
+          <td>
+           <li> Cooperation game </li>
+           <li> Bargaining solution </li>
+           <li> Bargaining axioms </li>
+           <li> <a href="https://youtu.be/hGkdqBNmYxk">Youtube: Part 1</a>, <a href="https://youtu.be/n2nq1rBe8u8">Youtube: Part 2</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/12.NBS.pptx">pptx</a>, <a href="game_files/12.NBS.pdf">pdf(1/1)</a>, <a href="game_files/12.NBS-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/12.NBS-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>13. Shapley Value
+          </td>
+          <td>
+           <li> Coalition game </li>
+           <li> Superadditive game </li>
+           <li> Convex game </li>
+           <li> Fair payoff division and Core</li>
+           <li> <a href="https://youtu.be/KxicgJ4MWr0">Youtube: Part 1</a>, <a href="https://youtu.be/SQM0iZd3dqo">Youtube: Part 2</a>, <a href="https://youtu.be/eTv1cZAYZVY">Youtube: Part 3</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/13.SV.pptx">pptx</a>, <a href="game_files/13.SV.pdf">pdf(1/1)</a>, <a href="game_files/13.SV-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/13.SV-4.pdf">pdf(4/1)</a></li>
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>14. Learning in Games
+          </td>
+          <td>
+           <li> Partially distributed learning </li>
+           <li> Fully distributed learning </li>
+           <li> Convergence condition </li>
+           <li> <a href="https://youtu.be/6WArE7mlEl4">Youtube: Part 1</a>, <a href="https://youtu.be/RIu_trYc73I">Youtube: Part 2</a>, <a href="https://youtu.be/5pua-kDXbb8">Youtube: Part 3</a></li>
+          </td>
+          <td>
+              <li>Lecture slides: <a href="game_files/14.learning.pptx">pptx</a>, <a href="game_files/14.learning.pdf">pdf(1/1)</a>, <a href="game_files/14.learning-2.pdf">pdf(2/1)</a>,
+                <a href="game_files/14.learning-4.pdf">pdf(4/1)</a></li>
+              <li><a href="game_files/CE.pdf">Note on Correlated Equilibrium </a> by  Jason R. Marden</li>
+
+              <!-- <li>For prints: <a href="prob_files/1.PM-1.pdf">1</a>, <a href="prob_files/1.PM-2.pdf">2</a>, <a href="prob_files/1.PM-4.pdf">4</a></li> -->
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+</body></html>
